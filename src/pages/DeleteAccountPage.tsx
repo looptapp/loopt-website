@@ -133,12 +133,22 @@ export default function DeleteAccountPage() {
             className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-white/55"
             style={{ fontFamily: '"Quicksand", sans-serif' }}
           >
-            <a href="/privacy" className="transition hover:text-white/85">
-              privacy policy
+            <a
+            href="https://join.loopt.app/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-white/85"
+            >
+            privacy policy
             </a>
             <span className="text-white/20">|</span>
-            <a href="/terms" className="transition hover:text-white/85">
-              terms &amp; conditions
+            <a
+                href="https://join.loopt.app/terms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-white/85"
+            >
+                terms &amp; conditions
             </a>
             <span className="text-white/20">|</span>
             <a href="/support" className="transition hover:text-white/85">
