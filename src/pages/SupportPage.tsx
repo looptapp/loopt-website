@@ -181,9 +181,18 @@ export default function SupportPage() {
               support
             </a>
             <span className="text-white/20">|</span>
-            <a href="/delete-account" className="transition hover:text-white/85">
-              delete account
-            </a>
+             <a href="/delete-account" className="transition hover:text-white/85">
+                delete account
+              </a>
+              <span className="text-white/20">|</span>
+              <a
+                href="https://www.loopt.app/safety"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-white/85"
+              >
+                child safety
+              </a>
           </div>
         </div>
       </footer>
