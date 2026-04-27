@@ -5,32 +5,37 @@ const faqs = [
   {
     question: "what is Loopt used for?",
     answer:
-      "Loopt is a private social planning app for organising plans with friends. It keeps invites, guest lists, updates and event details in one place, so everything stays clear.",
+      "Loopt is a private app for sharing real-life plans. It helps you see people more often by making it easy to put a plan in one place, add people, and let others join without the group chat back and forth.",
   },
   {
     question: "is Loopt public?",
     answer:
-      "no — Loopt is built for private plans, not public posting. Events are only visible to people who are invited, either directly or through someone in the group.",
+      "no — Loopt is built for private plans, not public posting. Plans are only visible to people who are invited, either directly or through someone in the group.",
   },
   {
     question: "do I need the app to open an invite?",
     answer:
-      "you can open an invite link in your browser and see the event details, like the name, date and time. To join the guest list, see who’s going, get updates or send messages, you’ll need to log in or create an account. It only takes a few seconds.",
+      "you can open an invite link in your browser and see the plan details, like the name, date and time. To join, see who’s in, get updates or send messages, you’ll need to log in or create an account. It only takes a few seconds.",
   },
   {
     question: "what kind of plans is Loopt for?",
     answer:
-      "anything social and real-life — drinks, dinners, birthdays, movies, sport, trips, house parties and more. It also works well for people who organise things regularly, like run clubs, dog walks, pub quizzes or group meetups.",
+      "anything social and real-life — after work drinks, birthdays, movies, sport, dinners, house parties, trips, park hangs and last-minute plans. It also works well for regular things like run clubs, dog walks, pub quizzes or group meetups.",
   },
   {
     question: "why use Loopt instead of a group chat?",
     answer:
-      "because the details stay organised. Instead of invites, updates and guest changes getting buried in messages, everything lives in one clear place. You can also easily add people — and give guests controlled access to invite others where it makes sense.",
+      "because plans don’t get lost. everything lives in one place, and you can let people add others — without having to manage it yourself.",
   },
   {
     question: "can I invite people who don’t have Loopt?",
     answer:
-      "yes — every event has a shareable invite link. You can send it to anyone, and they can join from there.",
+      "yes — plans can be shared with a link. If someone doesn’t have Loopt yet, they can join from the link and get set up in a few seconds.",
+  },
+  {
+    question: "how does Loopt help me see people more often?",
+    answer:
+      "most plans never get shared widely — not because people don’t want to invite others, but because it takes effort or creates pressure. Loopt helps you see people more often by making it easy to just put something out there, so people can join if they’re around.",
   },
 ];
 
@@ -166,15 +171,17 @@ export default function HomepagePreview() {
                 className="loopt-fade-2 max-w-[520px] text-[2.45rem] font-[500] leading-[0.98] tracking-[-0.055em] text-white sm:text-[3.1rem] lg:text-[4.15rem]"
                 style={{ fontFamily: '"Quicksand", sans-serif' }}
               >
-                plans, sorted
+                plans, shared
               </h1>
 
-                <p
-                  className="loopt-fade-3 mt-5 max-w-[470px] text-[1rem] font-[500] leading-[1.85] tracking-[-0.01em] text-white/68 sm:text-[1.04rem]"
-                  style={{ fontFamily: '"Quicksand", sans-serif' }}
-                >
-                  Loopt keeps your plans, people and updates in one place — so everything feels easy.
-                </p>
+              <p
+                className="loopt-fade-3 mt-5 max-w-[470px] text-[1rem] font-[500] leading-[1.85] tracking-[-0.01em] text-white/68 sm:text-[1.04rem]"
+                style={{ fontFamily: '"Quicksand", sans-serif' }}
+              >
+                plans shouldn't stay hidden in group chats
+                <br />
+                see what’s going on and join in
+              </p>
 
                 <div className="loopt-fade-4 mt-8 flex flex-col items-start">
                   {/* PRIMARY CTA */}
@@ -234,8 +241,7 @@ export default function HomepagePreview() {
                 a few things to know
               </h2>
               <p className="mt-3 max-w-[620px] text-[1rem] leading-7 text-white/60">
-                Loopt is a private app for organising plans with friends —
-                keeping invites, updates and guest lists in one place.
+                Loopt is a private app for sharing plans — so more people can join in, without the back and forth.
               </p>
             </div>
 

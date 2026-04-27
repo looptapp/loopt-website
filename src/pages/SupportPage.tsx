@@ -83,7 +83,7 @@ export default function SupportPage() {
             <div className="mt-7">
               <a
                 href={supportHref}
-                className="inline-flex min-h-[62px] items-center justify-center rounded-[16px] border border-[#FE7512]/75 px-9 text-[1rem] font-[500] tracking-[-0.01em] text-white transition duration-200 hover:bg-white/[0.02] hover:border-[#FE7512]"
+                className="inline-flex min-h-[56px] items-center justify-center rounded-[16px] border border-[#FE7512]/75 px-7 text-[1rem] font-[500] tracking-[-0.01em] text-white transition duration-200 hover:bg-white/[0.02] hover:border-[#FE7512]"
                 style={{ fontFamily: '"Quicksand", sans-serif' }}
               >
                 <span>contact Loopt</span>
