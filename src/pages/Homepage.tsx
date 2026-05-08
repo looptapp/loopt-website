@@ -171,16 +171,15 @@ export default function HomepagePreview() {
                 className="loopt-fade-2 max-w-[520px] text-[2.45rem] font-[500] leading-[0.98] tracking-[-0.055em] text-white sm:text-[3.1rem] lg:text-[4.15rem]"
                 style={{ fontFamily: '"Quicksand", sans-serif' }}
               >
-                plans, shared
+                plans, sorted
               </h1>
 
               <p
                 className="loopt-fade-3 mt-5 max-w-[470px] text-[1rem] font-[500] leading-[1.85] tracking-[-0.01em] text-white/68 sm:text-[1.04rem]"
                 style={{ fontFamily: '"Quicksand", sans-serif' }}
               >
-                plans shouldn't stay hidden in group chats
-                <br />
-                see what’s going on and join in
+                share what you're up to and let your<br />people bring their people
+                
               </p>
 
                 <div className="loopt-fade-4 mt-8 flex flex-col items-start">
@@ -196,8 +195,9 @@ export default function HomepagePreview() {
                     <span className="ml-2.5 text-white/60">›</span>
                   </a>
 
-                  {/* STORE BADGE */}
-                  <div className="mt-8 flex items-center opacity-85">
+                  {/* STORE BADGES */}
+                  <div className="mt-8 flex items-center gap-4 opacity-85">
+                    {/* App Store */}
                     <a
                       href="https://apps.apple.com/us/app/loopt/id6759469851"
                       target="_blank"
@@ -206,6 +206,19 @@ export default function HomepagePreview() {
                       <img
                         src="/app-store-badge.svg"
                         alt="Download on the App Store"
+                        className="h-[38px] w-auto"
+                      />
+                    </a>
+
+                    {/* Google Play */}
+                    <a
+                      href="https://play.google.com/store/apps/details?id=app.loopt.loopt"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/google-play-store-badge.svg"
+                        alt="Get it on Google Play"
                         className="h-[38px] w-auto"
                       />
                     </a>
@@ -241,7 +254,7 @@ export default function HomepagePreview() {
                 a few things to know
               </h2>
               <p className="mt-3 max-w-[620px] text-[1rem] leading-7 text-white/60">
-                Loopt is a private app for sharing plans — so more people can join in, without the back and forth.
+                Loopt is an app for sharing plans — so more people can join in, without the back and forth.
               </p>
             </div>
 
