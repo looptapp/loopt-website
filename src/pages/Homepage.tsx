@@ -178,7 +178,7 @@ export default function HomepagePreview() {
                 className="loopt-fade-3 mt-5 max-w-[470px] text-[1rem] font-[500] leading-[1.85] tracking-[-0.01em] text-white/68 sm:text-[1.04rem]"
                 style={{ fontFamily: '"Quicksand", sans-serif' }}
               >
-                share what you're up to and let your<br />people bring their people
+                make plans with people you know —<br />and let friends add friends too
                 
               </p>
 
