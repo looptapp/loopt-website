@@ -5,7 +5,7 @@ const faqs = [
   {
     question: "what is Loopt used for?",
     answer:
-      "Loopt is a private app for sharing real-life plans. It helps you see people more often by making it easy to put a plan in one place, add people, and let others join without the group chat back and forth.",
+      "Loopt is an app for sharing plans with people you know. It helps you see people more often by making it easy to put a plan in one place, add people from your network, and let friends add friends too. Instead of messaging multiple chats to coordinate plans, you can share something in just a few taps and keep everyone involved updated in one place.",
   },
   {
     question: "is Loopt public?",
@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "do I need the app to open an invite?",
     answer:
-      "you can open an invite link in your browser and see the plan details, like the name, date and time. To join, see who’s in, get updates or send messages, you’ll need to log in or create an account. It only takes a few seconds.",
+      "you can open invite links in your browser and see the basic plan details, like the name, date and time. To join, see who’s in, get updates or send messages, you’ll need to log in or create an account. It only takes a few seconds. You can continue to use Loopt in your browser, but to receive notifications about new plans, changes or messages, you’ll need the app.",
   },
   {
     question: "what kind of plans is Loopt for?",
@@ -25,17 +25,22 @@ const faqs = [
   {
     question: "why use Loopt instead of a group chat?",
     answer:
-      "because plans don’t get lost. everything lives in one place, and you can let people add others — without having to manage it yourself.",
+      "Loopt makes it easier to share plans beyond one fixed group. You can add people in just a few taps, let friends add others too, and choose how invites spread depending on the situation. Everything stays connected in one place, so it’s easier to keep people in the loop.",
   },
   {
     question: "can I invite people who don’t have Loopt?",
     answer:
-      "yes — plans can be shared with a link. If someone doesn’t have Loopt yet, they can join from the link and get set up in a few seconds.",
+      "yes - plans can be shared with a link. If someone doesn’t have Loopt yet, they can join from the link and get set up in a few seconds. Once they have an account, you'll be able to add them in just a tap next time.",
   },
   {
     question: "how does Loopt help me see people more often?",
     answer:
-      "most plans never get shared widely — not because people don’t want to invite others, but because it takes effort or creates pressure. Loopt helps you see people more often by making it easy to just put something out there, so people can join if they’re around.",
+      "a lot of plans never get shared widely — not because people don’t want others there, but because coordinating small plans can feel like too much effort. Starting a new group chat for a walk, coffee or last-minute drink often feels disproportionate, especially when people might not be free. Loopt makes it easy to just put something out there, add people in a few taps, and let others join if they’re around.",
+  },
+  {
+    question: "can I control who can invite others?",
+    answer:
+      "yes — with Loopt, you can decide how plans spread. Some plans can stay invite-only, while others can allow plus 1s, or allow friends to add people too. You can choose different invite settings depending on the plan and the people involved.",
   },
 ];
 
@@ -254,7 +259,7 @@ export default function HomepagePreview() {
                 a few things to know
               </h2>
               <p className="mt-3 max-w-[620px] text-[1rem] leading-7 text-white/60">
-                Loopt is an app for sharing plans — so more people can join in, without the back and forth.
+                Loopt makes it easy to share plans with people you know — in just a few taps
               </p>
             </div>
 
