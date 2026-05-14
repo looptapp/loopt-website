@@ -8,36 +8,56 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f0f10" />
-
-  <title>Loopt | plans, sorted</title>
   <meta
-    name="description"
-    content="Loopt is an app for sharing real-life plans — so more people can join in, without the group chat back and forth"
+    name="apple-itunes-app"
+    content="app-id=6759469851, app-argument=https://join.loopt.app/"
   />
-  <link rel="canonical" href="https://loopt.app/" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Loopt" />
-  <meta property="og:title" content="Loopt | plans, sorted" />
-  <meta
-    property="og:description"
-    content="Share real-life plans in one place, so people can see what’s going on and join in"
-  />
+<title>Loopt | plans, sorted</title>
+
+<meta
+  name="description"
+  content="make plans with people you know — friends can add friends too"
+/>
+<link rel="canonical" href="https://loopt.app/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Loopt" />
+
+<meta
+  property="og:title"
+  content="Loopt — make plans easier to share"
+/>
+
+<meta
+  property="og:description"
+  content="join in seconds"
+/>
   <meta property="og:url" content="https://loopt.app/" />
   <meta property="og:image" content="https://loopt.app/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+    <meta
+    property="og:image:alt"
+    content="loopt app preview"
+  />
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Loopt | plans, sorted" />
-  <meta
-    name="twitter:description"
-    content="Share real-life plans in one place, so people can see what’s going on and join in"
-  />
+  <meta name="twitter:title"
+  content="Loopt — make plans easier to share"
+/>
+<meta
+  name="twitter:description"
+  content="join in seconds"
+/>
   <meta name="twitter:image" content="https://loopt.app/og-image.png" />
-
+  <meta name="twitter:site" content="@getloopt" />
+  <meta
+    name="twitter:image:alt"
+    content="loopt app preview"
+  />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,6 +65,68 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://loopt.app/#organization",
+          "name": "Loopt",
+          "url": "https://loopt.app/",
+          "logo": "https://loopt.app/icon.png",
+          "sameAs": [
+            "https://www.instagram.com/getloopt",
+            "https://www.tiktok.com/@getloopt",
+            "https://x.com/getloopt"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://loopt.app/#website",
+          "name": "Loopt",
+          "url": "https://loopt.app/",
+          "publisher": {
+            "@id": "https://loopt.app/#organization"
+          },
+          "description": "make plans with people you know — friends can add friends too"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://loopt.app/#app",
+          "name": "Loopt",
+          "applicationCategory": "SocialNetworkingApplication",
+          "operatingSystem": "iOS, Android",
+          "url": "https://loopt.app/",
+          "description": "make plans easier to share — join in seconds",
+          "publisher": {
+            "@id": "https://loopt.app/#organization"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "GBP"
+          },
+          "downloadUrl": [
+            "https://apps.apple.com/us/app/loopt/id6759469851",
+            "https://play.google.com/store/apps/details?id=app.loopt.loopt"
+          ],
+          "identifier": [
+            {
+              "@type": "PropertyValue",
+              "propertyID": "iOS App Store ID",
+              "value": "6759469851"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "Android package name",
+              "value": "app.loopt.loopt"
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
   <body>
     <div id="root"></div>
