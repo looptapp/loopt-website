@@ -162,6 +162,11 @@ export default function SafetyPage() {
                 </a>
                 <span className="text-white/20">|</span>
 
+                <a href="/premium" className="transition hover:text-white/85">
+                    Premium
+                </a>
+                <span className="text-white/20">|</span>
+
                 <a
                     href="https://join.loopt.app/privacy"
                     target="_blank"
@@ -182,16 +187,6 @@ export default function SafetyPage() {
                 </a>
                 <span className="text-white/20">|</span>
 
-                <a
-                    href="https://www.loopt.app/safety"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition hover:text-white/85"
-                >
-                    child safety
-                </a>
-                <span className="text-white/20">|</span>
-
                 <a href="/support" className="transition hover:text-white/85">
                     support
                 </a>
@@ -199,6 +194,16 @@ export default function SafetyPage() {
 
                 <a href="/delete-account" className="transition hover:text-white/85">
                     delete account
+                </a>
+                <span className="text-white/20">|</span>
+
+                <a
+                    href="https://www.loopt.app/safety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition hover:text-white/85"
+                >
+                    child safety
                 </a>
                 </div>
             </div>

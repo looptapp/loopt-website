@@ -159,6 +159,10 @@ export default function SupportPage() {
           </p>
 
           <div className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-white/55">
+            <Link to="/premium" className="transition hover:text-white/85">
+              Premium
+            </Link>
+            <span className="text-white/20">|</span>
             <a
               href="https://join.loopt.app/privacy"
               target="_blank"

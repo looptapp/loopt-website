@@ -44,6 +44,33 @@ const faqs = [
   },
 ];
 
+const freeProductFeatures = [
+  {
+    title: "make a plan",
+    text: "add all the important details one time, in one place — no need to repeat yourself for multiple people",
+  },
+  {
+    title: "add people",
+    text: "and let them add people too\nchoose whether someone has invite only, +1 or open access",
+  },
+  {
+    title: "send updates",
+    text: "make changes to the plan knowing that everyone in the plan will be notified",
+  },
+  {
+    title: "mute the chat",
+    text: "get updates when details change, without getting every message notification",
+  },
+  {
+    title: "stop sharing",
+    text: "close the invite chain whenever you want, to stop adding people to the plan",
+  },
+  {
+    title: "cap numbers",
+    text: "set a limit so the plan automatically stops growing when it's full",
+  },
+];
+
 function FaqItem({
   question,
   answer,
@@ -233,20 +260,166 @@ export default function HomepagePreview() {
 
             {/* RIGHT */}
             <div className="flex justify-center lg:justify-end lg:-mt-4 lg:pr-20">
-              <div className="relative w-full max-w-[270px] sm:max-w-[300px] lg:max-w-[330px]">
+              <div className="relative w-full max-w-[270px] sm:max-w-[300px] lg:max-w-[365px]">
                 <div className="absolute inset-0 bg-[#FE7512]/[0.045] blur-3xl" />
                 <a
                   href="https://apps.apple.com/us/app/loopt/id6759469851"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    src="/plans.png"
-                    alt="Loopt app preview"
-                    className="loopt-fade-phone relative block w-full h-auto select-none"
-                    draggable={false}
-                  />
+                  <picture className="block">
+                    <source
+                      type="image/webp"
+                      srcSet="/plans-300.webp 300w, /plans-365.webp 365w, /plans-600.webp 600w, /plans-730.webp 730w"
+                      sizes="(min-width: 1024px) 365px, (min-width: 640px) 300px, 270px"
+                    />
+                    <img
+                      src="/plans.png"
+                      width={3881}
+                      height={7500}
+                      alt="Loopt app showing plans with friends"
+                      className="loopt-fade-phone relative block h-auto w-full select-none"
+                      fetchPriority="high"
+                      draggable={false}
+                    />
+                  </picture>
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-8 lg:px-12 lg:py-20">
+          <div className="mb-10 max-w-[760px]">
+            <h2 className="text-[2.65rem] font-[500] leading-[1.05] tracking-[-0.055em] text-white sm:text-[3.5rem]">
+              group plans without the chaos
+            </h2>
+          </div>
+
+          <div className="grid gap-10 md:grid-cols-3 md:gap-8 lg:gap-12">
+            <div className="px-1 py-2">
+              <span
+                aria-hidden="true"
+                className="mb-6 block h-[42px] w-[42px] bg-[#FE7512]"
+                style={{
+                  WebkitMask:
+                    "url(/plan_icon.svg) center / contain no-repeat",
+                  mask: "url(/plan_icon.svg) center / contain no-repeat",
+                }}
+              />
+              <h3 className="text-[1.35rem] font-[500] tracking-[-0.04em] text-white">
+                make a plan
+              </h3>
+              <p className="mt-4 text-[0.98rem] font-[500] leading-[1.75] text-white/56">
+                add the details, and share a link - once everyone's on Loopt,
+                you can add friends to plans in just a tap
+              </p>
+            </div>
+
+            <div className="px-1 py-2">
+              <span
+                aria-hidden="true"
+                className="mb-6 block h-[42px] w-[42px] bg-[#FE7512]"
+                style={{
+                  WebkitMask:
+                    "url(/bring_friends_symbol.svg) center / contain no-repeat",
+                  mask:
+                    "url(/bring_friends_symbol.svg) center / contain no-repeat",
+                }}
+              />
+              <h3 className="text-[1.35rem] font-[500] tracking-[-0.04em] text-white">
+                let the plan grow
+              </h3>
+              <p className="mt-4 text-[0.98rem] font-[500] leading-[1.75] text-white/56">
+                friends can add friends, so plans can spread easily - all the
+                details stay in one place
+              </p>
+            </div>
+
+            <div className="px-1 py-2">
+              <span
+                aria-hidden="true"
+                className="mb-6 block h-[42px] w-[42px] bg-[#FE7512]"
+                style={{
+                  WebkitMask:
+                    "url(/notifications_unread.svg) center / contain no-repeat",
+                  mask:
+                    "url(/notifications_unread.svg) center / contain no-repeat",
+                }}
+              />
+              <h3 className="text-[1.35rem] font-[500] tracking-[-0.04em] text-white">
+                keep everyone updated
+              </h3>
+              <p className="mt-4 text-[0.98rem] font-[500] leading-[1.75] text-white/56">
+                messages and updates stay attached to the plan, and anyone can
+                reuse the group again next time
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 grid gap-10 border-t border-white/10 pt-12 pb-20 sm:mt-16 sm:pt-16 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+            <div>
+              <p className="mb-4 text-[0.82rem] font-[600] uppercase tracking-[0.3em] text-[#FE7512]">
+                included free
+              </p>
+
+              <h2 className="max-w-[420px] text-[2.65rem] font-[500] leading-[1.05] tracking-[-0.055em] text-white sm:text-[3.5rem]">
+                what you can do with Loopt
+              </h2>
+
+              <p className="mt-6 max-w-[420px] text-[1.02rem] font-[500] leading-[1.85] text-white/56">
+                make a plan, let friends add friends, and keep the details in
+                one place.
+              </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {freeProductFeatures.map((feature) => (
+                <div
+                  key={feature.title}
+                  className="rounded-[28px] border border-white/10 bg-[#171717] p-6"
+                >
+                  <h3 className="text-[1.35rem] font-[500] leading-[1.15] tracking-[-0.04em] text-white">
+                    {feature.title}
+                  </h3>
+
+                  <p className="mt-4 whitespace-pre-line text-[0.98rem] font-[500] leading-[1.75] tracking-[-0.01em] text-white/56">
+                    {feature.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="border-t border-white/10 pt-8">
+            <div className="rounded-[34px] border border-white/10 bg-[#171717] px-7 py-10 sm:px-10 lg:px-14 lg:py-14">
+              <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+                <div>
+                  <p className="mb-4 text-[0.82rem] font-[600] uppercase tracking-[0.3em] text-white/28">
+                    GET LOOPT
+                  </p>
+
+                  <h2 className="max-w-[560px] text-[2.65rem] font-[500] leading-[1.05] tracking-[-0.055em] text-white sm:text-[3.5rem]">
+                    most people won’t need Premium
+                  </h2>
+                </div>
+
+                <div>
+                  <p className="max-w-[560px] text-[1.08rem] font-[500] leading-[1.9] text-white/62">
+                    Loopt is free for everyday plans. Premium gives you a little
+                    more control when you need it.
+                  </p>
+
+                  <Link
+                    to="/premium"
+                    className="mt-8 inline-flex h-[56px] items-center rounded-[15px] border border-[#FE7512] px-8 text-[1.05rem] font-[500] tracking-[-0.02em] text-white transition hover:bg-[#FE7512]/10"
+                  >
+                    Loopt Premium
+                    <span className="ml-3 translate-y-[-1px] text-[#FE7512]">
+                      →
+                    </span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -315,6 +488,10 @@ export default function HomepagePreview() {
             </p>
 
             <div className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-white/55">
+              <Link to="/premium" className="transition hover:text-white/85">
+                Premium
+              </Link>
+              <span className="text-white/20">|</span>
               <a
                 href="https://join.loopt.app/privacy"
                 target="_blank"
