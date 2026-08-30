@@ -3,6 +3,11 @@
     { "source": "/premium", "destination": "/premium.html" },
     { "source": "/support", "destination": "/support.html" },
     { "source": "/safety", "destination": "/safety.html" },
+    { "source": "/answers", "destination": "/answers.html" },
+    {
+      "source": "/answers/how-to-make-friends-at-uni",
+      "destination": "/answers/how-to-make-friends-at-uni.html"
+    },
     {
       "source": "/delete-account",
       "destination": "/delete-account.html"

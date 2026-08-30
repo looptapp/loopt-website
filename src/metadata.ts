@@ -5,6 +5,8 @@ export type RouteMetadata = {
   description: string;
   canonicalUrl: string;
   expectedContent: string;
+  ogType?: "website" | "article";
+  structuredData?: Record<string, unknown>;
 };
 
 export const PRERENDER_ROUTES: RouteMetadata[] = [
@@ -25,6 +27,36 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
       "Loopt Premium gives you extra control over plans that grow, including who's in, payments, access, privacy and more.",
     canonicalUrl: "https://loopt.app/premium",
     expectedContent: "for plans that spread",
+  },
+  {
+    pathname: "/answers",
+    outputFile: "answers.html",
+    title: "Loopt Answers | Making plans and spending time together",
+    description:
+      "Thoughtful answers to real questions about making plans, seeing friends and spending more time together offline.",
+    canonicalUrl: "https://loopt.app/answers",
+    expectedContent: "Making plans and spending time together",
+  },
+  {
+    pathname: "/answers/how-to-make-friends-at-uni",
+    outputFile: "answers/how-to-make-friends-at-uni.html",
+    title: "How do you make friends at uni? | Loopt",
+    description:
+      "Making friends at uni isn't only about meeting people. Turning new acquaintances into friends usually means making another plan and spending time together again.",
+    canonicalUrl: "https://loopt.app/answers/how-to-make-friends-at-uni",
+    expectedContent: "How do you make friends at uni?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/how-to-make-friends-at-uni#article",
+      headline: "How do you make friends at uni?",
+      description:
+        "Making friends at uni isn't only about meeting people. Turning new acquaintances into friends usually means making another plan and spending time together again.",
+      datePublished: "2026-08-30",
+      mainEntityOfPage: "https://loopt.app/answers/how-to-make-friends-at-uni",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
   },
   {
     pathname: "/support",

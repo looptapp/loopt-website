@@ -56,13 +56,35 @@ function injectMetadata(html, route) {
     route.description,
   );
   result = replaceAttribute(result, "og-url", "content", route.canonicalUrl);
+  result = replaceAttribute(
+    result,
+    "og-type",
+    "content",
+    route.ogType ?? "website",
+  );
   result = replaceAttribute(result, "twitter-title", "content", route.title);
-  return replaceAttribute(
+  result = replaceAttribute(
     result,
     "twitter-description",
     "content",
     route.description,
   );
+  return injectStructuredData(result, route.structuredData);
+}
+
+function injectStructuredData(html, routeStructuredData) {
+  const pattern = /(<script\s+data-route-meta="structured-data"\s+type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g;
+  const matches = [...html.matchAll(pattern)];
+  if (matches.length !== 1) {
+    throw new Error(`Expected one structured data marker, found ${matches.length}`);
+  }
+
+  const value = JSON.parse(matches[0][2]);
+  value["@graph"] = value["@graph"].filter(
+    (node) => node["@type"] !== "Article",
+  );
+  if (routeStructuredData) value["@graph"].push(routeStructuredData);
+  return html.replace(pattern, `$1${JSON.stringify(value)}$3`);
 }
 
 function injectRenderedPage(html, route, renderedPage) {
@@ -83,6 +105,7 @@ function assertGeneratedPage(html, route) {
     ["og-title", "content", route.title],
     ["og-description", "content", route.description],
     ["og-url", "content", route.canonicalUrl],
+    ["og-type", "content", route.ogType ?? "website"],
     ["twitter-title", "content", route.title],
     ["twitter-description", "content", route.description],
   ];
@@ -132,6 +155,20 @@ function assertGeneratedPage(html, route) {
   if (html.includes('<div id="root"></div>')) {
     throw new Error(`${route.pathname} still contains an empty application root`);
   }
+
+  const structuredDataPattern = /<script\s+data-route-meta="structured-data"\s+type="application\/ld\+json">([\s\S]*?)<\/script>/;
+  const structuredData = JSON.parse(
+    html.match(structuredDataPattern)?.[1] ?? "null",
+  );
+  const articleNodes = structuredData?.["@graph"]?.filter(
+    (node) => node["@type"] === "Article",
+  );
+  if (route.structuredData && articleNodes?.length !== 1) {
+    throw new Error(`${route.pathname} is missing its Article structured data`);
+  }
+  if (!route.structuredData && articleNodes?.length) {
+    throw new Error(`${route.pathname} unexpectedly contains Article structured data`);
+  }
 }
 
 async function prerender() {
@@ -140,8 +177,8 @@ async function prerender() {
   const serverModule = await import(pathToFileURL(serverBundle).href);
   const { PRERENDER_ROUTES: routes, render } = serverModule;
 
-  if (!Array.isArray(routes) || routes.length !== 5) {
-    throw new Error(`Expected exactly five prerender routes, found ${routes?.length ?? 0}`);
+  if (!Array.isArray(routes) || routes.length === 0) {
+    throw new Error("Expected at least one prerender route");
   }
 
   for (const route of routes) {

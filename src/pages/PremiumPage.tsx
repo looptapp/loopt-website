@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SiteMenu from "../components/SiteMenu";
 
 // const iconStyle =
 //   "h-[42px] w-auto opacity-90";
@@ -70,16 +71,8 @@ export default function PremiumPage() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#0f0f10] font-['Quicksand',sans-serif] text-white">
+      <SiteMenu />
       <section className="relative mx-auto w-full max-w-7xl px-6 pt-8 pb-14 sm:px-8 sm:pt-10 lg:px-12 lg:pt-12 lg:pb-16">
-        <a
-          href="/"
-          className="absolute left-6 top-8 inline-flex items-center text-[0.95rem] font-[500] tracking-[-0.01em] text-[#FE7512]/78 transition hover:text-[#FE7512] sm:left-8 sm:top-10 lg:left-12 lg:top-12"
-          style={{ fontFamily: '"Quicksand", sans-serif' }}
-        >
-          <span className="mr-2 text-[1rem]">‹</span>
-          go back
-        </a>
-
         <div className="grid items-start gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12">
           <div className="max-w-[620px] pt-[15%] sm:pt-[13%] lg:pt-[30%]">
             <Link to="/">

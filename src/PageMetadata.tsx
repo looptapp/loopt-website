@@ -7,6 +7,23 @@ function setContent(selector: string, content: string) {
   if (element) element.content = content;
 }
 
+function setStructuredData(structuredData?: Record<string, unknown>) {
+  const element = document.querySelector<HTMLScriptElement>(
+    '[data-route-meta="structured-data"]',
+  );
+  if (!element?.textContent) return;
+
+  const value = JSON.parse(element.textContent) as {
+    "@context": string;
+    "@graph": Record<string, unknown>[];
+  };
+  value["@graph"] = value["@graph"].filter(
+    (node) => node["@type"] !== "Article",
+  );
+  if (structuredData) value["@graph"].push(structuredData);
+  element.textContent = JSON.stringify(value);
+}
+
 export default function PageMetadata() {
   const { pathname } = useLocation();
 
@@ -19,6 +36,7 @@ export default function PageMetadata() {
     setContent('[data-route-meta="og-title"]', metadata.title);
     setContent('[data-route-meta="og-description"]', metadata.description);
     setContent('[data-route-meta="og-url"]', metadata.canonicalUrl);
+    setContent('[data-route-meta="og-type"]', metadata.ogType ?? "website");
     setContent('[data-route-meta="twitter-title"]', metadata.title);
     setContent(
       '[data-route-meta="twitter-description"]',
@@ -29,6 +47,7 @@ export default function PageMetadata() {
       '[data-route-meta="canonical"]',
     );
     if (canonical) canonical.href = metadata.canonicalUrl;
+    setStructuredData(metadata.structuredData);
   }, [pathname]);
 
   return null;

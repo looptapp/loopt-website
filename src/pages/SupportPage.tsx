@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SiteMenu from "../components/SiteMenu";
 export default function SupportPage() {
   const supportHref =
     "mailto:lily@loopt.app?subject=" +
@@ -44,16 +45,8 @@ export default function SupportPage() {
       `}</style>
 
       <main className="min-h-screen bg-[#0f0f10] text-white">
+      <SiteMenu />
       <section className="relative mx-auto w-full max-w-7xl px-6 pt-8 pb-14 sm:px-8 sm:pt-10 lg:px-12 lg:pt-12 lg:pb-16">
-
-        <a
-  href="/"
-  className="absolute left-6 top-8 inline-flex items-center text-[0.95rem] font-[500] tracking-[-0.01em] text-[#FE7512]/78 transition hover:text-[#FE7512] sm:left-8 sm:top-10 lg:left-12 lg:top-12"
-  style={{ fontFamily: '"Quicksand", sans-serif' }}
->
-  <span className="mr-2 text-[1rem]">‹</span>
-  go back
-</a>
         {/* TOP SECTION */}
         <div className="grid items-start gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
           {/* LEFT SIDE */}

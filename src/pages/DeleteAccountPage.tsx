@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SiteMenu from "../components/SiteMenu";
 export default function DeleteAccountPage() {
   const deleteHref =
     "mailto:lily@loopt.app?subject=" +
@@ -10,16 +11,8 @@ export default function DeleteAccountPage() {
 
   return (
     <main className="min-h-screen bg-[#0f0f10] text-white">
+      <SiteMenu />
       <section className="relative mx-auto w-full max-w-5xl px-6 pt-8 pb-14 sm:px-8 sm:pt-10 lg:px-12 lg:pt-12 lg:pb-16">
-        <a
-          href="/"
-          className="absolute left-6 top-2 inline-flex items-center text-[0.95rem] font-[500] tracking-[-0.01em] text-[#FE7512]/78 transition hover:text-[#FE7512] sm:left-8 sm:top-4 lg:left-12 lg:top-6"
-          style={{ fontFamily: '"Quicksand", sans-serif' }}
-        >
-          <span className="mr-2 text-[1rem]">‹</span>
-          go back
-        </a>
-
         <div className="max-w-[680px] pt-[15%] sm:pt-[13%] lg:pt-[18%]">
         <Link to="/">
           <img

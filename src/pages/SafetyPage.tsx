@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import SiteMenu from "../components/SiteMenu";
 
 
 export default function SafetyPage() {
@@ -46,16 +47,8 @@ export default function SafetyPage() {
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
-      <div className="max-w-md mx-auto px-4 pt-4">
-        <a
-        href="https://www.loopt.app"
-        className="text-sm text-gray-400 hover:text-gray-200 transition"
-        >
-        ← home
-        </a>
-      </div>
-
-      <div className="px-4 py-6">
+      <SiteMenu />
+      <div className="px-4 pb-6 pt-16">
         <div className="max-w-md mx-auto space-y-6 text-sm leading-relaxed">
           <h1 className="text-xl font-semibold text-gray-100">
             child safety standards
