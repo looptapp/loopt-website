@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/make-plans-with-friends-when-everyone-is-busy",
+    outputFile: "answers/make-plans-with-friends-when-everyone-is-busy.html",
+    title: "How do you make plans with friends when everyone is busy? | Loopt",
+    description:
+      "When everyone is busy, making the plan first and seeing who can come can be easier than waiting for every friend's calendar to line up.",
+    canonicalUrl: "https://loopt.app/answers/make-plans-with-friends-when-everyone-is-busy",
+    expectedContent: "How do you make plans with friends when everyone is busy?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/make-plans-with-friends-when-everyone-is-busy#article",
+      headline: "How do you make plans with friends when everyone is busy?",
+      description:
+        "When everyone is busy, making the plan first and seeing who can come can be easier than waiting for every friend's calendar to line up.",
+      datePublished: "2026-08-31",
+      mainEntityOfPage: "https://loopt.app/answers/make-plans-with-friends-when-everyone-is-busy",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/organise-plans-big-group-of-friends",
     outputFile: "answers/organise-plans-big-group-of-friends.html",
     title: "How do you organise plans with a big group of friends? | Loopt",
