@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/organise-plans-big-group-of-friends",
+    outputFile: "answers/organise-plans-big-group-of-friends.html",
+    title: "How do you organise plans with a big group of friends? | Loopt",
+    description:
+      "Organising plans with a big group is easier when the plan is concrete, important details stay clear and you don't wait for everyone to agree.",
+    canonicalUrl: "https://loopt.app/answers/organise-plans-big-group-of-friends",
+    expectedContent: "How do you organise plans with a big group of friends?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/organise-plans-big-group-of-friends#article",
+      headline: "How do you organise plans with a big group of friends?",
+      description:
+        "Organising plans with a big group is easier when the plan is concrete, important details stay clear and you don't wait for everyone to agree.",
+      datePublished: "2026-08-31",
+      mainEntityOfPage: "https://loopt.app/answers/organise-plans-big-group-of-friends",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/best-app-for-making-plans-with-friends",
     outputFile: "answers/best-app-for-making-plans-with-friends.html",
     title: "What's the best app for making plans with friends? | Loopt",
