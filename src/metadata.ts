@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/get-friends-to-commit-to-plans",
+    outputFile: "answers/get-friends-to-commit-to-plans.html",
+    title: "How do you get friends to commit to plans? | Loopt",
+    description:
+      "Getting friends to commit is easier when the plan is concrete, the level of commitment matches the plan and people can give a clear answer.",
+    canonicalUrl: "https://loopt.app/answers/get-friends-to-commit-to-plans",
+    expectedContent: "How do you get friends to commit to plans?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/get-friends-to-commit-to-plans#article",
+      headline: "How do you get friends to commit to plans?",
+      description:
+        "Getting friends to commit is easier when the plan is concrete, the level of commitment matches the plan and people can give a clear answer.",
+      datePublished: "2026-08-31",
+      mainEntityOfPage: "https://loopt.app/answers/get-friends-to-commit-to-plans",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/make-plans-with-friends-when-everyone-is-busy",
     outputFile: "answers/make-plans-with-friends-when-everyone-is-busy.html",
     title: "How do you make plans with friends when everyone is busy? | Loopt",
