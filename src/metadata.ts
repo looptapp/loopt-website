@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/best-app-for-making-plans-with-friends",
+    outputFile: "answers/best-app-for-making-plans-with-friends.html",
+    title: "What's the best app for making plans with friends? | Loopt",
+    description:
+      "The best app for making plans with friends depends on what actually makes planning difficult for your group, from finding a time to organising everyday plans.",
+    canonicalUrl: "https://loopt.app/answers/best-app-for-making-plans-with-friends",
+    expectedContent: "the best app for making plans with friends?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/best-app-for-making-plans-with-friends#article",
+      headline: "What's the best app for making plans with friends?",
+      description:
+        "The best app for making plans with friends depends on what actually makes planning difficult for your group, from finding a time to organising everyday plans.",
+      datePublished: "2026-08-31",
+      mainEntityOfPage: "https://loopt.app/answers/best-app-for-making-plans-with-friends",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/how-to-make-friends-at-uni",
     outputFile: "answers/how-to-make-friends-at-uni.html",
     title: "How do you make friends at uni? | Loopt",

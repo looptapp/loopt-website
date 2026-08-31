@@ -5,6 +5,10 @@
     { "source": "/safety", "destination": "/safety.html" },
     { "source": "/answers", "destination": "/answers.html" },
     {
+      "source": "/answers/best-app-for-making-plans-with-friends",
+      "destination": "/answers/best-app-for-making-plans-with-friends.html"
+    },
+    {
       "source": "/answers/how-to-make-friends-at-uni",
       "destination": "/answers/how-to-make-friends-at-uni.html"
     },
