@@ -5,6 +5,10 @@
     { "source": "/safety", "destination": "/safety.html" },
     { "source": "/answers", "destination": "/answers.html" },
     {
+      "source": "/answers/dont-make-friends-during-freshers-week",
+      "destination": "/answers/dont-make-friends-during-freshers-week.html"
+    },
+    {
       "source": "/answers/make-recurring-plans-with-friends",
       "destination": "/answers/make-recurring-plans-with-friends.html"
     },

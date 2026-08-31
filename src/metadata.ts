@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/dont-make-friends-during-freshers-week",
+    outputFile: "answers/dont-make-friends-during-freshers-week.html",
+    title: "What if I don't make friends during Freshers' Week? | Loopt",
+    description:
+      "Not making friends during Freshers' Week doesn't mean you've missed your chance. Focus on who you'd like to see again, then make another plan.",
+    canonicalUrl: "https://loopt.app/answers/dont-make-friends-during-freshers-week",
+    expectedContent: "make friends during Freshers",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/dont-make-friends-during-freshers-week#article",
+      headline: "What if I don't make friends during Freshers' Week?",
+      description:
+        "Not making friends during Freshers' Week doesn't mean you've missed your chance. Focus on who you'd like to see again, then make another plan.",
+      datePublished: "2026-08-31",
+      mainEntityOfPage: "https://loopt.app/answers/dont-make-friends-during-freshers-week",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/make-recurring-plans-with-friends",
     outputFile: "answers/make-recurring-plans-with-friends.html",
     title: "How do you make recurring plans with friends? | Loopt",
