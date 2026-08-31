@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/make-recurring-plans-with-friends",
+    outputFile: "answers/make-recurring-plans-with-friends.html",
+    title: "How do you make recurring plans with friends? | Loopt",
+    description:
+      "Recurring plans are easier when you reduce repeated organising, whether that means a standing plan or making it simple to bring the same group together again.",
+    canonicalUrl: "https://loopt.app/answers/make-recurring-plans-with-friends",
+    expectedContent: "How do you make recurring plans with friends?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/make-recurring-plans-with-friends#article",
+      headline: "How do you make recurring plans with friends?",
+      description:
+        "Recurring plans are easier when you reduce repeated organising, whether that means a standing plan or making it simple to bring the same group together again.",
+      datePublished: "2026-08-31",
+      mainEntityOfPage: "https://loopt.app/answers/make-recurring-plans-with-friends",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/get-friends-to-commit-to-plans",
     outputFile: "answers/get-friends-to-commit-to-plans.html",
     title: "How do you get friends to commit to plans? | Loopt",

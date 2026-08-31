@@ -5,6 +5,10 @@
     { "source": "/safety", "destination": "/safety.html" },
     { "source": "/answers", "destination": "/answers.html" },
     {
+      "source": "/answers/make-recurring-plans-with-friends",
+      "destination": "/answers/make-recurring-plans-with-friends.html"
+    },
+    {
       "source": "/answers/get-friends-to-commit-to-plans",
       "destination": "/answers/get-friends-to-commit-to-plans.html"
     },
