@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/make-friends-through-mutual-friends",
+    outputFile: "answers/make-friends-through-mutual-friends.html",
+    title: "How do you make friends through mutual friends? | Loopt",
+    description:
+      "Making friends through mutual friends is about seeing the people you click with again, making another plan and letting social circles naturally overlap.",
+    canonicalUrl: "https://loopt.app/answers/make-friends-through-mutual-friends",
+    expectedContent: "How do you make friends through mutual friends?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/make-friends-through-mutual-friends#article",
+      headline: "How do you make friends through mutual friends?",
+      description:
+        "Making friends through mutual friends is about seeing the people you click with again, making another plan and letting social circles naturally overlap.",
+      datePublished: "2026-09-01",
+      mainEntityOfPage: "https://loopt.app/answers/make-friends-through-mutual-friends",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/tell-friends-they-can-bring-other-people",
     outputFile: "answers/tell-friends-they-can-bring-other-people.html",
     title: "How do you tell friends they can bring other people to a plan? | Loopt",

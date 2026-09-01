@@ -1,5 +1,11 @@
+export type AnswerInlineFragment = {
+  type: "text" | "strong" | "em";
+  text: string;
+};
+
 export type AnswerContentBlock =
   | { type: "heading" | "paragraph" | "strong"; text: string }
+  | { type: "inlineParagraph"; fragments: AnswerInlineFragment[] }
   | { type: "accessLevel"; icon: string; label: string; definition: string }
   | { type: "example"; lines: string[] };
 
@@ -13,6 +19,71 @@ export type Answer = {
 };
 
 export const answers: Answer[] = [
+  {
+    slug: "make-friends-through-mutual-friends",
+    path: "/answers/make-friends-through-mutual-friends",
+    title: "How do you make friends through mutual friends?",
+    description: "Making friends through mutual friends is about seeing the people you click with again, making another plan and letting social circles naturally overlap.",
+    datePublished: "2026-09-01",
+    content: [
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "Making friends through mutual friends is less about meeting as many people as possible and more about " },
+        { type: "strong", text: "seeing the people you click with again" },
+        { type: "text", text: "." },
+      ] },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "Spend time in plans where you'll meet each other's friends. If you get on with someone, include them the next time you're doing something. That's how someone goes from " },
+        { type: "em", text: "your friend's friend" },
+        { type: "text", text: " to someone you have a friendship with yourself." },
+      ] },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "Loopt is designed to make that easier. Friends can add friends to plans, so different social circles can naturally overlap. And if you meet someone through a plan, " },
+        { type: "strong", text: "you can add them to a future plan yourself, even if you never exchanged numbers." },
+      ] },
+      { type: "strong", text: "A mutual friend can make the introduction. Another plan can turn that introduction into a friendship." },
+      { type: "heading", text: "Let friends bring friends" },
+      { type: "paragraph", text: "You don't need to organise a formal introduction to everyone your friends know." },
+      { type: "paragraph", text: "Sometimes it's as simple as getting a few people together and letting them bring people they think will enjoy it." },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "On Loopt, " },
+        { type: "strong", text: "Open access" },
+        { type: "text", text: " means people can add people they know, and those people can add people too. So a plan can start with a few existing friends and grow naturally through them." },
+      ] },
+      { type: "paragraph", text: "That could mean your friend brings their housemate to the pub. Someone adds a friend from work to Sunday lunch. A few different friendship groups end up at the same birthday drinks." },
+      { type: "paragraph", text: "You spend time with people you already know while naturally meeting some people you don't." },
+      { type: "heading", text: "See the people you click with again" },
+      { type: "paragraph", text: "Meeting someone once doesn't automatically make you friends." },
+      { type: "paragraph", text: "The important bit is creating another opportunity to spend time together." },
+      { type: "paragraph", text: "That doesn't have to mean immediately asking someone you've just met to hang out one-to-one. Include them in drinks you're already organising. Add them to something a few of you are doing. Make another plan with some of the same people." },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "On Loopt, plans create shared social context between people. If you met someone through a plan, " },
+        { type: "strong", text: "you can add them to another plan later." },
+      ] },
+      { type: "paragraph", text: "So you don't need to have exchanged numbers, or rely on the original mutual friend to bring everyone together again." },
+      { type: "heading", text: "Let your new connections introduce you to theirs" },
+      { type: "paragraph", text: "This is where friendship groups can start growing in a really natural way." },
+      { type: "paragraph", text: "Your friend brings someone you haven't met." },
+      { type: "paragraph", text: "You get on and start including them in things." },
+      { type: "paragraph", text: "They bring someone they know to another plan." },
+      { type: "paragraph", text: "Now you meet them too." },
+      { type: "paragraph", text: "It doesn't need to be a deliberate exercise in “expanding your network”. You're just spending time with people, meeting more of each other's friends and seeing the people you like again." },
+      { type: "paragraph", text: "Over time, separate friendship groups can start to overlap." },
+      { type: "heading", text: "You don't need to meet loads of new people" },
+      { type: "paragraph", text: "Making friends through mutual friends isn't about turning every plan into a networking event." },
+      { type: "paragraph", text: "Spend time with your existing friends. Be open to the people they bring. Bring some of your own friends when it makes sense." },
+      { type: "paragraph", text: "Then notice who you naturally want to see again." },
+      { type: "paragraph", text: "One new person you really get on with is more meaningful than meeting a room full of people once and never seeing them again." },
+      { type: "heading", text: "Let friendships grow through plans" },
+      { type: "paragraph", text: "The nice thing about mutual friends is that new friendships don't have to start completely from scratch." },
+      { type: "paragraph", text: "Someone you trust brings someone they know. You spend time together. If you get on, you see each other again." },
+      { type: "paragraph", text: "Then that new person might introduce you to more of their friends too." },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "That's one of the ideas behind Loopt: " },
+        { type: "strong", text: "plans can grow through people, and so can your social circle." },
+      ] },
+      { type: "paragraph", text: "You don't need to deliberately build a network. Keep making plans, open some of them up when it feels right, and make it easy to spend time again with the people you meet along the way." },
+    ],
+  },
   {
     slug: "tell-friends-they-can-bring-other-people",
     path: "/answers/tell-friends-they-can-bring-other-people",

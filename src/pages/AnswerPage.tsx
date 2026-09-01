@@ -61,6 +61,21 @@ export default function AnswerPage() {
                   </div>
                 );
               }
+              if (block.type === "inlineParagraph") {
+                return (
+                  <p key={index} className="mb-6 text-[1.05rem] font-[500] leading-[1.85] tracking-[-0.01em] text-white/72 sm:text-[1.1rem]">
+                    {block.fragments.map((fragment, fragmentIndex) => {
+                      if (fragment.type === "strong") {
+                        return <strong key={fragmentIndex} className="font-[700] text-white/92">{fragment.text}</strong>;
+                      }
+                      if (fragment.type === "em") {
+                        return <em key={fragmentIndex}>{fragment.text}</em>;
+                      }
+                      return <span key={fragmentIndex}>{fragment.text}</span>;
+                    })}
+                  </p>
+                );
+              }
               if (block.type === "strong") {
                 return <p key={index} className="my-10 border-l border-[#FE7512]/45 pl-5 text-[1.05rem] leading-[1.85] tracking-[-0.01em] text-white/92 sm:my-12 sm:pl-6 sm:text-[1.1rem]"><strong className="font-[700]">{block.text}</strong></p>;
               }

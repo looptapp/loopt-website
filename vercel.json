@@ -5,6 +5,10 @@
     { "source": "/safety", "destination": "/safety.html" },
     { "source": "/answers", "destination": "/answers.html" },
     {
+      "source": "/answers/make-friends-through-mutual-friends",
+      "destination": "/answers/make-friends-through-mutual-friends.html"
+    },
+    {
       "source": "/answers/tell-friends-they-can-bring-other-people",
       "destination": "/answers/tell-friends-they-can-bring-other-people.html"
     },
