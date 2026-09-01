@@ -16,6 +16,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://loopt.app/answers/tell-friends-they-can-bring-other-people</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://loopt.app/answers/dont-make-friends-during-freshers-week</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>

@@ -1,5 +1,6 @@
 export type AnswerContentBlock =
   | { type: "heading" | "paragraph" | "strong"; text: string }
+  | { type: "accessLevel"; icon: string; label: string; definition: string }
   | { type: "example"; lines: string[] };
 
 export type Answer = {
@@ -12,6 +13,64 @@ export type Answer = {
 };
 
 export const answers: Answer[] = [
+  {
+    slug: "tell-friends-they-can-bring-other-people",
+    path: "/answers/tell-friends-they-can-bring-other-people",
+    title: "How do you tell friends they can bring other people to a plan?",
+    description: "Tell friends they can bring other people by making the plan's access clear, from Them only and Plus one to Open access for friends of friends.",
+    datePublished: "2026-09-01",
+    content: [
+      { type: "paragraph", text: "The easiest way is to make it clear from the start how open the plan is." },
+      { type: "paragraph", text: "Sometimes you only want the people you've asked. Sometimes you'd be happy for everyone to bring one other person. And sometimes the whole point is to open the plan up and let friends bring friends." },
+      { type: "paragraph", text: "Making that clear means nobody has to awkwardly ask, “Is it okay if I bring someone?” or guess whether an extra person would be welcome." },
+      { type: "heading", text: "Decide how open you actually want the plan to be" },
+      { type: "paragraph", text: "Not every plan needs the same rule." },
+      { type: "paragraph", text: "If you've booked dinner for six people, you might need to know exactly who's coming." },
+      { type: "paragraph", text: "If you're having people over, you might be happy for a friend to bring their partner or someone they know." },
+      { type: "paragraph", text: "And if you're getting a group together at the pub, you might genuinely think: the more the merrier." },
+      { type: "paragraph", text: "Before telling people they can bring others, work out which kind of plan this is." },
+      { type: "paragraph", text: "It doesn't have to be either completely closed or completely open." },
+      { type: "heading", text: "Loopt lets you make that permission part of the plan" },
+      { type: "paragraph", text: "On Loopt, you can decide how much access people have to add others." },
+      { type: "paragraph", text: "There are three levels:" },
+      { type: "accessLevel", icon: "/invite_only_symbol.svg", label: "Them only", definition: "means they're included in the plan, but they can't add anyone else." },
+      { type: "accessLevel", icon: "/plus_one_symbol.svg", label: "Plus one", definition: "means they can add one other person." },
+      { type: "accessLevel", icon: "/bring_friends_symbol.svg", label: "Open access", definition: "means they can add people they know, and those people can add people too. That means the plan can keep growing naturally through the people already involved." },
+      { type: "paragraph", text: "You can set a default for the plan and then tailor someone's access individually if you need to." },
+      { type: "paragraph", text: "Other people don't need to see the access you've chosen for everyone else. They simply get the ability that's relevant to them. So if someone has them-only access, for example, they won't see an option to add another person." },
+      { type: "paragraph", text: "That removes some of the awkwardness from both sides. You don't have to tell someone “please don't bring anyone else”, and they don't have to wonder whether they're supposed to ask." },
+      { type: "paragraph", text: "If it's particularly important, you can still say in the plan that people should bring friends, or that you're keeping this one small." },
+      { type: "heading", text: "Opening a plan can be a really nice way to meet more people" },
+      { type: "paragraph", text: "There's also a reason you might deliberately want to make a plan more open." },
+      { type: "paragraph", text: "Friendship groups can easily stay separate." },
+      { type: "paragraph", text: "You have your friends from work. Someone else has their housemates. Another friend has people they know from uni. You might hear about these people all the time without actually spending much time with them." },
+      { type: "paragraph", text: "An open plan gives those circles somewhere to overlap." },
+      { type: "paragraph", text: "You add a few people. They add people they think would enjoy it. Those people can bring others too." },
+      { type: "paragraph", text: "Suddenly you're not only spending time with the friends you already know. You're meeting more of each other's people through people you already trust." },
+      { type: "paragraph", text: "And sometimes you really click with one of them." },
+      { type: "paragraph", text: "That's how a plan for a few drinks can gradually lead to a bigger social circle, without anyone having to organise a formal way for everyone to meet." },
+      { type: "heading", text: "Open access doesn't mean unlimited" },
+      { type: "paragraph", text: "Of course, “bring people” can become a problem if you only have space for twelve." },
+      { type: "paragraph", text: "Opening a plan doesn't mean giving up control over its size." },
+      { type: "paragraph", text: "If you know the limit from the beginning, you can put a cap on the plan. People can add others while there's space, but the plan can't keep growing beyond the number you've set." },
+      { type: "paragraph", text: "Or you can start with an open plan and see how it develops. Once you've got enough people, you can stop sharing it so people can't keep adding others." },
+      { type: "paragraph", text: "So you can get the nice part of an open plan, where friends bring friends and different circles start mixing, without having to leave the plan open indefinitely." },
+      { type: "heading", text: "You can give different people different access" },
+      { type: "paragraph", text: "Sometimes one rule for everyone doesn't quite work." },
+      { type: "paragraph", text: "Maybe you'd love one friend to bring their housemates, while another person has already asked whether they can bring their partner and that's all the extra space you have." },
+      { type: "paragraph", text: "Loopt lets you tailor people's add access when you need to, rather than applying exactly the same rule to everybody." },
+      { type: "paragraph", text: "That means you can be quite open about who brings people without losing the ability to shape the plan when it matters." },
+      { type: "paragraph", text: "Most casual plans probably won't need much thought at all. Set the access that makes sense and get on with making the plan." },
+      { type: "paragraph", text: "But the flexibility is there when you need it." },
+      { type: "heading", text: "Make it easy for your social circles to overlap" },
+      { type: "paragraph", text: "If you're happy for people to bring friends, the most useful thing you can do is make that clear." },
+      { type: "paragraph", text: "It saves everyone from trying to work out an unwritten social rule." },
+      { type: "paragraph", text: "And being a little more open can have benefits beyond making one plan bigger." },
+      { type: "paragraph", text: "Your friends get to meet more of your friends. You meet more of theirs. People who get on can see each other again. Over time, separate friendship groups can start to overlap." },
+      { type: "paragraph", text: "You don't have to open every plan." },
+      { type: "paragraph", text: "But when it feels right, letting people bring people can create more opportunities for everyone to spend time together." },
+    ],
+  },
   {
     slug: "dont-make-friends-during-freshers-week",
     path: "/answers/dont-make-friends-during-freshers-week",

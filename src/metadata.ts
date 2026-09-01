@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/tell-friends-they-can-bring-other-people",
+    outputFile: "answers/tell-friends-they-can-bring-other-people.html",
+    title: "How do you tell friends they can bring other people to a plan? | Loopt",
+    description:
+      "Tell friends they can bring other people by making the plan's access clear, from Them only and Plus one to Open access for friends of friends.",
+    canonicalUrl: "https://loopt.app/answers/tell-friends-they-can-bring-other-people",
+    expectedContent: "How do you tell friends they can bring other people to a plan?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/tell-friends-they-can-bring-other-people#article",
+      headline: "How do you tell friends they can bring other people to a plan?",
+      description:
+        "Tell friends they can bring other people by making the plan's access clear, from Them only and Plus one to Open access for friends of friends.",
+      datePublished: "2026-09-01",
+      mainEntityOfPage: "https://loopt.app/answers/tell-friends-they-can-bring-other-people",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/dont-make-friends-during-freshers-week",
     outputFile: "answers/dont-make-friends-during-freshers-week.html",
     title: "What if I don't make friends during Freshers' Week? | Loopt",

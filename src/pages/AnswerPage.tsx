@@ -44,6 +44,23 @@ export default function AnswerPage() {
                   </div>
                 );
               }
+              if (block.type === "accessLevel") {
+                return (
+                  <div key={index} className="mb-6 flex items-start gap-4">
+                    <span
+                      aria-hidden="true"
+                      className="mt-1 block h-8 w-8 shrink-0 bg-[#FE7512]"
+                      style={{
+                        WebkitMask: `url(${block.icon}) center / contain no-repeat`,
+                        mask: `url(${block.icon}) center / contain no-repeat`,
+                      }}
+                    />
+                    <p className="text-[1.05rem] font-[500] leading-[1.85] tracking-[-0.01em] text-white/72 sm:text-[1.1rem]">
+                      <strong className="font-[700] text-white/92">{block.label}</strong>{" "}{block.definition}
+                    </p>
+                  </div>
+                );
+              }
               if (block.type === "strong") {
                 return <p key={index} className="my-10 border-l border-[#FE7512]/45 pl-5 text-[1.05rem] leading-[1.85] tracking-[-0.01em] text-white/92 sm:my-12 sm:pl-6 sm:text-[1.1rem]"><strong className="font-[700]">{block.text}</strong></p>;
               }
