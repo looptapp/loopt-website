@@ -38,6 +38,27 @@ export const PRERENDER_ROUTES: RouteMetadata[] = [
     expectedContent: "Making plans and spending time together",
   },
   {
+    pathname: "/answers/plan-birthday-on-loopt",
+    outputFile: "answers/plan-birthday-on-loopt.html",
+    title: "How do I plan my birthday on Loopt? | Loopt",
+    description:
+      "Learn how to plan your birthday on Loopt, add people, let friends bring friends, cap numbers and use extra controls when you need them.",
+    canonicalUrl: "https://loopt.app/answers/plan-birthday-on-loopt",
+    expectedContent: "How do I plan my birthday on Loopt?",
+    ogType: "article",
+    structuredData: {
+      "@type": "Article",
+      "@id": "https://loopt.app/answers/plan-birthday-on-loopt#article",
+      headline: "How do I plan my birthday on Loopt?",
+      description:
+        "Learn how to plan your birthday on Loopt, add people, let friends bring friends, cap numbers and use extra controls when you need them.",
+      datePublished: "2026-09-02",
+      mainEntityOfPage: "https://loopt.app/answers/plan-birthday-on-loopt",
+      author: { "@id": "https://loopt.app/#organization" },
+      publisher: { "@id": "https://loopt.app/#organization" },
+    },
+  },
+  {
     pathname: "/answers/make-friends-through-mutual-friends",
     outputFile: "answers/make-friends-through-mutual-friends.html",
     title: "How do you make friends through mutual friends? | Loopt",

@@ -36,6 +36,9 @@ export default function AnswerPage() {
               if (block.type === "heading") {
                 return <h2 key={index} className="mb-6 mt-16 text-[1.65rem] font-[500] leading-[1.25] tracking-[-0.04em] text-white sm:mt-20 sm:text-[2rem]">{block.text}</h2>;
               }
+              if (block.type === "subheading") {
+                return <h3 key={index} className="mb-5 mt-10 text-[1.3rem] font-[600] leading-[1.3] tracking-[-0.03em] text-white sm:mt-12 sm:text-[1.5rem]">{block.text}</h3>;
+              }
               if (block.type === "example") {
                 return (
                   <div key={index} className="my-9 max-w-[360px] rounded-[20px] border border-white/10 bg-[#171717] px-5 py-4 sm:px-6 sm:py-5">

@@ -5,6 +5,10 @@
     { "source": "/safety", "destination": "/safety.html" },
     { "source": "/answers", "destination": "/answers.html" },
     {
+      "source": "/answers/plan-birthday-on-loopt",
+      "destination": "/answers/plan-birthday-on-loopt.html"
+    },
+    {
       "source": "/answers/make-friends-through-mutual-friends",
       "destination": "/answers/make-friends-through-mutual-friends.html"
     },

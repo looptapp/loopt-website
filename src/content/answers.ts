@@ -4,7 +4,7 @@ export type AnswerInlineFragment = {
 };
 
 export type AnswerContentBlock =
-  | { type: "heading" | "paragraph" | "strong"; text: string }
+  | { type: "heading" | "subheading" | "paragraph" | "strong"; text: string }
   | { type: "inlineParagraph"; fragments: AnswerInlineFragment[] }
   | { type: "accessLevel"; icon: string; label: string; definition: string }
   | { type: "example"; lines: string[] };
@@ -19,6 +19,128 @@ export type Answer = {
 };
 
 export const answers: Answer[] = [
+  {
+    slug: "plan-birthday-on-loopt",
+    path: "/answers/plan-birthday-on-loopt",
+    title: "How do I plan my birthday on Loopt?",
+    description: "Learn how to plan your birthday on Loopt, add people, let friends bring friends, cap numbers and use extra controls when you need them.",
+    datePublished: "2026-09-02",
+    content: [
+      { type: "paragraph", text: "You can use Loopt for anything from birthday dinner with a few friends to birthday drinks where friends bring friends." },
+      { type: "paragraph", text: "Make your plan, add the people you want to start with and decide whether they can add other people too. You can share links with anyone else, cap the numbers if you have limited space, and keep everyone updated as the plan changes." },
+      { type: "inlineParagraph", fragments: [
+        { type: "strong", text: "You don't need Premium to organise your birthday on Loopt." },
+        { type: "text", text: " If you need firmer answers from people, want to collect money or need a bit more control, there are extra Premium features you can use." },
+      ] },
+      { type: "heading", text: "Make your birthday plan" },
+      { type: "paragraph", text: "Start by adding what's going on, the details, time and place." },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "You'll also choose " },
+        { type: "strong", text: "who can add others" },
+        { type: "text", text: ". This becomes the default access for the people you add:" },
+      ] },
+      { type: "accessLevel", icon: "/invite_only_symbol.svg", label: "Them only", definition: "means they can't add anyone else." },
+      { type: "accessLevel", icon: "/plus_one_symbol.svg", label: "Plus one", definition: "means they can add one other person." },
+      { type: "accessLevel", icon: "/bring_friends_symbol.svg", label: "Open access", definition: "means they can add people, and those people can add people too." },
+      { type: "paragraph", text: "Once you've posted the plan, you can tap the image at the top to add a full-size event image and give your birthday a bit more personality." },
+      { type: "heading", text: "Add the people you want there" },
+      { type: "paragraph", text: "You can add your Loopt connections individually, or reuse groups from recent plans. That's handy if you want to bring back together people you've already made plans with, including people beyond just your direct connections." },
+      { type: "paragraph", text: "The add access you chose when making the plan is the default, but it doesn't have to be the same for everyone. While you're adding people, you can tap someone again to cycle their access individually." },
+      { type: "paragraph", text: "So your birthday could be Open access by default, while one person gets Plus one. Or it could be Them only by default, while a few friends are free to bring other people." },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "For everyone else, " },
+        { type: "strong", text: "share a link" },
+        { type: "text", text: "." },
+      ] },
+      { type: "paragraph", text: "You can make different links Them only, Plus one or Open access too. You might add your closest friends directly, send a Plus one link to another group, and drop an Open access link into a group chat where everyone's welcome to bring friends." },
+      { type: "paragraph", text: "You can always add more people or share another link later." },
+      { type: "heading", text: "Keep the birthday under control" },
+      { type: "paragraph", text: "Letting people bring friends doesn't mean your birthday has to keep growing indefinitely." },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "If you've booked an area for 30 people, you can " },
+        { type: "strong", text: "cap the plan at 30" },
+        { type: "text", text: ". Once it's full, nobody else can join." },
+      ] },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "Or if enough people have joined and you're happy with the group you've got, use " },
+        { type: "strong", text: "stop sharing" },
+        { type: "text", text: ". That stops the plan spreading any further, while you can still add someone yourself." },
+      ] },
+      { type: "paragraph", text: "Changing controls like these doesn't notify everyone. The new rule simply applies to the plan. If the plan has reached capacity, for example, someone trying to join will see that it's full." },
+      { type: "heading", text: "Keep everyone in the loop" },
+      { type: "paragraph", text: "If you change the name, details, date, time or place, people in the plan are notified, so you don't need to tell everyone separately when something changes." },
+      { type: "paragraph", text: "There's also a group chat for the conversation around the birthday. People are notified about new messages, but anyone can mute the chat without missing important updates to the plan itself." },
+      { type: "paragraph", text: "You can add useful links in the location, details or chat too, and people can add the plan to their calendar." },
+      { type: "paragraph", text: "Everyone also gets a reminder two hours before the birthday starts." },
+      { type: "paragraph", text: "If you made the plan, you'll get a few updates that aren't sent to everyone else. You'll know when someone joins through one of your links, when someone else adds someone, when someone leaves and when someone reacts to the plan." },
+      { type: "paragraph", text: "If the birthday isn't happening anymore, you can cancel the plan and add a note if you want to. Everyone will be notified that it's cancelled, along with your note if you added one." },
+      { type: "heading", text: "Want a bit more control? That's where Premium can help" },
+      { type: "paragraph", text: "You can organise a birthday without Premium. If you're going to the pub, want friends to bring friends and just need to stop the group getting too big, the free controls may be all you need." },
+      { type: "paragraph", text: "But some birthdays need a little more certainty or control." },
+      { type: "subheading", text: "Get a firmer answer from everyone" },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "If you've booked dinner for 15 and actually need to know who's coming, turn on " },
+        { type: "strong", text: "check who's in" },
+        { type: "text", text: "." },
+      ] },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "People can answer " },
+        { type: "strong", text: "yes, maybe or no" },
+        { type: "text", text: " and leave you a note with their response. You'll also see who's still pending because they haven't seen or responded yet." },
+      ] },
+      { type: "strong", text: "Those responses are for your eyes only, not the whole group." },
+      { type: "paragraph", text: "Without check who's in, people can still leave the plan if they can't make it and rejoin later. They just won't be able to give you a yes, maybe or no response or leave a note with it." },
+      { type: "subheading", text: "Ask everyone a question" },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "Use " },
+        { type: "strong", text: "ask a question" },
+        { type: "text", text: " when there's one thing you need to know from people." },
+      ] },
+      { type: "paragraph", text: "You can choose whether answers are visible to everyone or just you and the person answering." },
+      { type: "paragraph", text: "For dietary requirements, you might keep the answers private." },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "If you're having a birthday BBQ, you could ask " },
+        { type: "strong", text: "“What are you bringing?”" },
+        { type: "text", text: " and make the answers visible to everyone, so people can see what's already covered." },
+      ] },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "You could also use it for something like " },
+        { type: "em", text: "“Which pizza should we order?”" },
+        { type: "text", text: ", " },
+        { type: "em", text: "“What song do you want on the playlist?”" },
+        { type: "text", text: " or " },
+        { type: "em", text: "“Are you coming for dinner or just drinks afterwards?”" },
+      ] },
+      { type: "subheading", text: "Add a payment link" },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "If everyone needs to chip in, you can add an external " },
+        { type: "strong", text: "payment link" },
+        { type: "text", text: " and the amount to the plan." },
+      ] },
+      { type: "paragraph", text: "People can follow the link to pay and then mark themselves as paid in Loopt, making it easier for you to keep track." },
+      { type: "paragraph", text: "Loopt doesn't process or verify the payment itself." },
+      { type: "subheading", text: "Change someone's add access later" },
+      { type: "paragraph", text: "You might decide after making the plan that someone who was Them only can bring a friend after all." },
+      { type: "paragraph", text: "Premium lets you change an individual person's add access after they're already in the plan, without changing it for everyone else." },
+      { type: "subheading", text: "Stop people rejoining" },
+      { type: "paragraph", text: "Normally, someone can leave a Loopt plan and rejoin later." },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "If you don't want that for your birthday, turn on " },
+        { type: "strong", text: "prevent rejoining" },
+        { type: "text", text: ". Once someone leaves, they won't be able to come back into the plan." },
+      ] },
+      { type: "subheading", text: "Protect your list" },
+      { type: "inlineParagraph", fragments: [
+        { type: "text", text: "If you don't want other people using your birthday group to bring the same people together afterwards, you can " },
+        { type: "strong", text: "protect your list" },
+        { type: "text", text: "." },
+      ] },
+      { type: "heading", text: "Keep it as simple as your birthday needs to be" },
+      { type: "paragraph", text: "A birthday at the pub with a few friends probably doesn't need every control switched on. Make the plan, add your people and you're good to go." },
+      { type: "paragraph", text: "If you've booked dinner for 16, you might cap the numbers and check who's in. If it's birthday drinks where the more the merrier, use Open access and let friends bring friends. If you've hired somewhere and everyone owes £20, add a payment link." },
+      { type: "strong", text: "Start with the birthday you want, then use the Loopt controls that actually help you organise it." },
+    ],
+  },
   {
     slug: "make-friends-through-mutual-friends",
     path: "/answers/make-friends-through-mutual-friends",
